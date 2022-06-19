@@ -1,0 +1,253 @@
+
+.bg-img {
+    /* The image used */
+    background-image: url("navbar.jpeg");
+  
+    min-height: 400px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+  }
+  
+  /* Position the navbar container inside the image */
+  .container {
+    
+    position: absolute;
+    margin: 20px;
+    width: auto;
+  
+  }
+  
+  /* The navbar */
+  .topnav {
+    overflow: hidden;
+    width: 100vh;
+  
+  }
+  
+  .topnav a {
+    
+    float: left;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(150, 147, 147);
+    color: black;
+  }
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  background-color: rgb(214, 211, 211);
+}
+
+a.btn {
+  text-decoration: none;
+  color: #666;
+   border: 2px solid #666;
+   padding: 10px 15px;
+   display: inline-block;
+   margin-left: 5px;
+}
+
+
+pre.prettyprint {
+	padding: 15px !important;
+   margin: 10px;
+	border: 0 !important;
+  background: #f2f2f2;
+  overflow: auto;
+}
+
+.source {
+	white-space: pre;
+	overflow: auto;
+	max-height: 400px;
+}
+code{
+    border:1px solid #ddd;
+    padding: 2px;
+    border-radius: 2px;
+}
+main{
+    background: #fff;
+    padding: 0px;
+    
+  }
+ 
+
+.container{
+  
+    display: flex;
+    width: 50vh;
+  
+    
+   
+}
+.product-name {
+  padding: 0 0 0 20px;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: underline;
+    width: 100vh;
+    height: 0vh;
+  
+    
+}
+
+.product-price, .cart_item_price {
+  padding: 0 0 0 20px;
+    font-style: oblique;
+    font-family: cursive;
+}
+
+.product-img {
+  
+    width: 200px;
+    height: 180px;
+    margin: 0 auto;
+}
+
+.card {
+  
+  display: flex;
+  flex-direction: row;
+    width: 95vh;
+    /* border: 1px dashed grey; */
+}
+
+
+.btn:disabled {
+  
+    opacity: 3.5;
+}
+
+h4 {
+    font-family: cursive;
+    font-size: 32px;
+    text-align: center;
+    color: rgb(9, 46, 194);
+    background-color: rgb(250, 235, 216);
+}
+
+/* 
+.cart{
+padding-left: 50px;
+} */
+
+.cart{
+ padding: 0 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-align: center;
+  height: 30vh;
+  width: 100vh;
+  background-color: #c7c5c5;
+}
+.cart_item_name {
+  
+    font-size: larger;
+    height: 5vh;
+    font-weight: 700;
+    width: 100%;
+    /* border: 1px dashed grey; */
+}
+
+
+.heart-like-button ,.heart-like-button1,.heart-like-button2 {
+ position: relative;
+ 
+  width: 170px;
+  height: 170px;
+}
+
+.heart-like-button:before ,.heart-like-button1:before, .heart-like-button2:before {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  width: 80px;
+  height: 125px;
+  border-radius: 40px 40px 0 0;
+  background-color: #574136;
+  content: "";
+  cursor: pointer;
+  transition: background .4s;
+}
+.heart-like-button:after, .heart-like-button1:after, .heart-like-button2:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin :100% 100%;
+  width: 80px;
+  height: 125px;
+  border-radius: 40px 40px 0 0;
+  background-color: #574136;
+  content: "";
+  cursor: pointer;
+  transition: background .4s;
+}
+.heart-like-button.liked::before, .heart-like-button.liked::after, 
+.heart-like-button1.liked::before,
+.heart-like-button1.liked::after, 
+.heart-like-button2.liked::before,
+.heart-like-button2.liked::after {
+  background-color: #d65076;
+}
+.heart-like-button.liked, .heart-like-button1.liked, .heart-like-button2.liked {
+  animation: liked .4s ease;
+}
+@keyframes liked {
+  0% {
+    transform: scale(.8);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 480px) {
+  #container {
+    height: auto;
+  }
+}
+/* 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(192, 192, 192, 0.1);
+    font-family: cursive;
+    font-size: xx-large;
+    cursor: wait;
+    letter-spacing: 0.05em;
+    text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+} */
+
+/* ---------------------------------------
+---------------------------------------
+--------------------------------------- */
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
